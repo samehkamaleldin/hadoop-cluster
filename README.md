@@ -2,10 +2,10 @@
 Hadoop cluster using Vagrant and Docker
 
 ## installation
-first you need to install `virtualbox` and `Vagrant` then:
+first you need to install `virtualbox >= 5.0.1` and `Vagrant >= 1.7.4` then:
 ``` bash
 # clone hadoop cluster repository
-git clone git@github.com:samehkamaleldin/gog-lib.git
+git clone git@github.com:samehkamaleldin/hadoop-cluster.git
 # enter rep directory
 cd hadoop-cluster
 # start vagrant machine box
