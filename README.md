@@ -17,7 +17,11 @@ vagrant ssh
 # enter hadoop-cluster-docker dir
 cd hadoop-cluster-docker
 # start hadoop cluster
-./start-container.sh
+sudo ./start-container.sh # this will start containers and ssh to hadoop env
+# start hadoop
+./start-hadoop.sh
+# run-wordcount example on hadoop
+./run-wordcount.sh
 ```
 ## Acknowledgement
 the code seed in this repository is totally copied from github repository [kiwenlau/hadoop-cluster-docker](https://github.com/kiwenlau/hadoop-cluster-docker)
