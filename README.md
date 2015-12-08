@@ -10,12 +10,12 @@ git clone git@github.com:samehkamaleldin/hadoop-cluster.git
 cd hadoop-cluster
 # start vagrant machine box
 vagrant up
-# start provisioning (it starts automatically at machine's first time boot)
-vagrant provision
 # ssh to vagrant machine
 vagrant ssh
 # enter hadoop-cluster-docker dir
 cd hadoop-cluster-docker
+# set the size of the hadoop cluster
+sudo ./resize-cluster.sh 3
 # start hadoop cluster
 sudo ./start-container.sh # this will start containers and ssh to hadoop env
 # start hadoop
